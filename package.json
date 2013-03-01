@@ -1,0 +1,25 @@
+{
+    "name": "Marrow",
+    "version": "0.0.0",
+    "description": "The marrow your backbone needs",
+    "author": "Cristian Carlesso <@kentaromiura> (http://mykenta.blogspot.com)",
+    "main": "Source/index",
+    "repository": {
+        "url": ""
+    },
+    "dependencies": {
+        "prime": "*",
+        "elements": "*",
+        "moofx": "*",
+        "agent": "*"
+    },
+    "devDependencies": {
+        "mocha" : "*",
+        "expect.js":"*" ,
+        "wrapup": "0.11.2"
+    },
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}

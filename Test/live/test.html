@@ -1,0 +1,42 @@
+<html>
+<!-- this code was originally in http://jsfiddle.net/tBS4X/1/ from http://leanpub.com/backbonetutorials -->
+<head>
+    <script src="../../Build/Marrow.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script> <!-- this will eventually be removed in favor of underprime -->
+    <script src="http://backbonejs.org/backbone-min.js"></script>
+</head>
+<body>
+<div id="search_container">a</div>
+<script type="text/template" id="search_template">
+    <label>Search</label>
+    <input type="text" id="search_input" />
+    <input type="button" id="search_button" value="Search" />
+</script>
+<script id="app.js">
+    var $ = jQuery; //Marrow doesn't export $ for now.
+
+    var SearchView = Backbone.View.extend({
+        initialize: function(){
+            this.render();
+        },
+        render: function(){
+            // Compile the template using underscore
+            var template = _.template( $("#search_template").html(), {} );
+            // Load the compiled HTML into the Backbone "el"
+            this.$el.html( template );
+        },
+        events: {
+            "click input[type=button]": "doSearch"
+        },
+        doSearch: function( event ){
+            // Button clicked, you can access the element that was clicked with event.currentTarget
+            alert( "Search for " + $("#search_input").val() );
+        }
+    });
+
+    onload = function(){
+        var search_view = new SearchView({ el: $("#search_container") });
+    }
+</script>
+</body>
+</html>
