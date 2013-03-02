@@ -6,7 +6,7 @@ because without it, backbone is useful as confetti to clean your ass.
 What's Marrow?
 ------------------------
 
-Marrow objective is to provide a single drop-in dependency for backbone,
+Marrow objective is to provide _a single drop-in dependency_ for backbone,
 using the latest MooTools technology, especially the new moofx effects library.
 
 In order to do this, it shim jQuery methods used by backbone, right now it still require underscore, but most of what underscore provide is already backed in the new mootools prime, so eventually it will be substituted with
@@ -30,6 +30,6 @@ TODO:
 
 Inspiration:
 Marrow take inspiration from https://github.com/inkling/backbone-mootools, 
-after removing Request in favor of agent I though it was better to start a new project to reduce the size of the dependency
+after removing Request in favor of agent I though it was better to start a new project to reduce the size of the dependencies
 
 
