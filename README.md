@@ -1,7 +1,7 @@
 Marrow.js
 ========================
 
-because without it, backbone it's as useful as confetti to clean your ass.
+because without it, backbone is as useful as confetti to clean your ass.
 
 What's Marrow?
 ------------------------
